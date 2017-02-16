@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "MediaDownloader",
+  "description": "웹사이트의 미디어를 다운로드하여 파일로 저장합니다.",
+  "version": "0.1.0",
+
+  "browser_action": {
+    "default_icon": "dragon_curve.png",
+    "default_popup": "main.html"
+  },
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "http://tv.naver.com/"
+  ]
+}
