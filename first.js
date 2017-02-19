@@ -336,6 +336,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 chrome.downloads.onDeterminingFilename.addListener(function(item, suggest) {
-  suggest({filename: current.filename + "_" + item.fileSize + "." + item.mime.split("/")[1],
+  suggest({filename: Video.info.user + "_" + Video.info.title + "_" + item.fileSize + "." + item.mime.split("/")[1],
            conflictAction: "uniquify"});
 });
