@@ -3,7 +3,7 @@
 
   "name": "MediaDownloader",
   "description": "웹사이트의 미디어를 다운로드하여 파일로 저장합니다.",
-  "version": "0.1.0",
+  "version": "0.2.0",
 
   "browser_action": {
     "default_icon": "dragon_curve.png",
@@ -13,5 +13,6 @@
     "activeTab",
     "downloads",
     "http://tv.naver.com/"
-  ]
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
